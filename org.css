@@ -1,0 +1,244 @@
+body {
+  font-family: valkyrie-text;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  margin: 0px;
+  color: #4e4e4e;
+}
+
+#org {
+  margin-left: 10%;
+  width: 70%;
+  background-color: #fafafa;
+  padding: 50px;
+	min-height: 800px;
+}
+
+pre {
+	background: #ececec;
+	font-size: 0.8em;
+	padding: 4px 5px;
+	overflow: auto;
+	margin: 20px 0px 20px 20px;
+}
+
+#loader {
+	height: 5px;
+	background-color: white;
+	width: 60%;
+	margin: 50px 20%;
+	overflow: hidden;
+}
+
+#bar {
+	height: 100%;
+	background-color: #bcbcbc;
+	animation-name: loading;
+  animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes loading{
+  0% {margin-left: -20%; width: 20%}
+	100% {margin-left: 100%; width: 20%}
+}
+
+
+.section-number {
+  font-size: 0.5em;
+  padding: 5px;
+}
+
+h3, h3.inactive {
+  font-size: 150%;
+  font-style: italic;
+  font-weight: normal;
+  background-color: #fafafa;
+  padding: 10px 5px;
+  border-bottom: 1px dotted #efefef;
+  width: 90%;
+	cursor: pointer;
+}
+
+h3.active {
+	background-color: #fdfdfd;
+}
+
+h3:hover{
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.11);
+}
+
+h3:first-child{
+	margin-top: 0;
+	padding: 10px 5px;
+	border-bottom: 1px dotted #efefef;
+	width: 90%;
+}
+
+h4, h5, h6, h7, h8 {
+  font-size: 120%;
+  font-style: italic;
+  font-weight: normal;
+  border-bottom: 1px dotted #efefef;
+  padding: 5px 5px 10px;
+  width: 90%;
+  margin-bottom: 19px;
+  /* background-color: #fdfdfd */
+}
+
+h7, h8{
+	background-color: #fefefe;
+	border-bottom: none;
+}
+
+.line{
+  white-space: pre-line;
+  padding: 0px 0px 0px 0px;
+  line-height: 1.5rem;
+  font-size: 0.9em;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: underline;
+	color: #0075ab;
+}
+
+li {
+	padding: 0px 0px;
+	line-height: 1.5rem;
+	font-size: 0.9em;
+}
+
+#message {
+	background-color: #f0f0f0;
+	padding: 50px;
+	margin-left: 10%;
+	width: 70%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.explain {
+	padding: 20px 0px;
+	text-align: center;
+	font-size: 15px;
+	color: #aeaeae;
+}
+
+.explain a{
+	color: #757575;
+}
+
+.message a {
+	text-decoration: underline;
+}
+
+.detail{
+	font-size: 80%;
+	padding: 15px 0px;
+	border-top: 1px dotted #ececec;
+	margin: 0;
+}
+
+blockquote .line {
+  padding-top: 0px;
+	font-style: oblique;
+	font-size: 0.8rem;
+}
+
+blockquote {
+  background-color: #f5fbff;
+  padding: 15px 20px;
+}
+
+.prettyprint {
+  background-color: #f8f8f8;
+  padding: 15px 20px 0px;
+  margin-left: 20px;
+}
+
+code, .results {
+  white-space: pre-line;
+	line-height: 1.2rem;
+	font-size: 0.6rem;
+}
+
+.results {
+	margin: 0;
+	background: #fbf7f3;
+}
+
+p.results {
+	padding: 0px 12px;
+}
+
+img {
+	max-width: 90%;
+	height: auto;
+}
+
+@media screen and (max-device-width: 480px) {
+  #org {
+		font-size: 16px;
+		margin-left: 0px;
+		width: auto;
+		padding: 0px;
+	}
+	h3, h3:first-child, h3.inactive {
+		padding: 15px 5%;
+		border-bottom: 1px solid #ececec;
+		width: 90%;
+		margin: 0 0 0px 0;
+	}
+	h3 {
+		margin-top: 0px;
+	}
+	h3.active{
+		box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.11);
+	}
+	h4, h5, h6, h7, h8 {
+		padding: 10px 5%;
+		width: 90%;
+		margin: 0px;
+	}
+	.line {
+		padding: 10px 5px;
+		margin-left: 20px;
+	}
+	.prettyprint {
+		padding: 15px 20px 0px;
+		margin: 20px;
+	}
+	pre {
+		margin: 20px;
+	}
+  blockquote{
+    margin: 15px 0px;
+  }
+	#message {
+		background-color: #f0f0f0;
+		padding: 20px 0px 15px;
+		margin: 50px 0;
+		width: 100%;
+	}
+	#loader {
+		height: 5px;
+		background-color: white;
+		width: 60%;
+		margin: 35px 20%;
+		overflow: hidden;
+	}
+	.explain {
+		margin: 0px 10% 30px;
+		text-align: center;
+		font-size: 13px;
+		color: #aeaeae;
+		width: 80%;
+		padding: 0;
+	}
+}
