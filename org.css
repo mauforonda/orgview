@@ -93,7 +93,7 @@ h7, h8{
 
 .line{
   white-space: pre-line;
-  padding: 0px 0px 0px 0px;
+  padding: 8px 0px;
   line-height: 1.5rem;
   font-size: 0.9em;
   margin-left: 20px;
