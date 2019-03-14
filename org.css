@@ -161,7 +161,7 @@ blockquote {
 
 .prettyprint {
   background-color: #f8f8f8;
-  padding: 15px 20px 0px;
+  padding: 0px;
   margin-left: 20px;
 }
 
@@ -171,12 +171,12 @@ code {
 }
 
 .prettyprint code {
-	padding: 0px;
+	padding: 15px 20px 0px;
 	margin-left: 0px;
 }
 
 code, .results {
-  white-space: pre-line;
+  /* white-space: pre-line; */
 	line-height: 1.2rem;
 	font-size: 0.6rem;
 }
@@ -193,6 +193,19 @@ p.results {
 img {
 	max-width: 90%;
 	height: auto;
+}
+
+.toggleblock {
+	cursor: pointer;
+	background: linear-gradient(to right, #f9f9f9, #f2f1f5);
+	padding: 10px 20px;
+	color: #bcbdc6;
+	font-size: 12px;
+	margin: 0px;
+	font-family: charset normal;
+	border-bottom: 1px solid #f2f1f5;
+	text-align: center;
+	box-shadow: 0 1px 6px 0 rgba(45, 46, 48, 0.03);
 }
 
 @media screen and (max-device-width: 480px) {
@@ -224,7 +237,6 @@ img {
 		margin-left: 20px;
 	}
 	.prettyprint {
-		padding: 15px 20px 0px;
 		margin: 20px;
 	}
 	pre {

@@ -41,9 +41,31 @@ const removeEmpty = () => {
 	})
 };
 
+const blockToggle = (event) => {
+	let block = event.target.parentNode.querySelector('code');
+	if (event.target.textContent == 'show code') {
+		block.style.display = 'block';
+		event.target.textContent = 'hide code';
+	} else {
+		block.style.display = 'none';
+		event.target.textContent = 'show code';
+	}
+};
+
+const prependBlock = () => {
+	let prepend = element('p', {className: 'toggleblock', textContent: 'show code'});
+	prepend.addEventListener('click', blockToggle);
+	return prepend;
+};
+
 const processBlocks = () => {
 	document.querySelectorAll('pre code').forEach((block) => {
 		hljs.highlightBlock(block);
+		if (!block.className.includes('language-json')) {
+			let prepend = prependBlock();
+			block.parentNode.insertBefore(prepend, block);
+			block.style.display = 'none';
+		}
 		adopt();
 		removeEmpty();
 	});
