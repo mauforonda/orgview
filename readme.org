@@ -1,11 +1,11 @@
 
-Simple implementation of Masafumi Oyamada's [[https://github.com/mooz/org-js][org.js]]. It parses and renders internet-accesible org-mode documents. You may find it useful if
+Simple implementation of Masafumi Oyamada's [[https://github.com/mooz/org-js][org.js]]. It parses and renders internet-accesible org-mode documents. You may find it useful when
 
-- you want to share working notes that are expected to change regularly and would benefit of sidestepping any compilation process.
+- you want to share working notes that you expect to change regularly and would benefit from sidestepping any compilation process.
 - you are away from emacs and need to share internet-accesible notes with someone who doesn't speak org-mode
 
-You can see it live (and use it) here:
-[[https://mauforonda.github.io/org/?https://raw.githubusercontent.com/mauforonda/emacs/master/readme.org][mauforonda.github.io/org/?https://raw.githubusercontent.com/mauforonda/emacs/master/readme.org]]
+You can see a live example [[https://mauforonda.github.io/orgview/?https://raw.githubusercontent.com/mauforonda/emacs/master/readme.org][here]]
+To use it on your own documents, just change the url parameter.
 
 You can point this link to any org-mode document as long as its server accepts cors requests.
 

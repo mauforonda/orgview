@@ -1,78 +1,106 @@
 body {
-  font-family: valkyrie-text;
-  background-color: #f5f5f5;
-  font-size: 12px;
-  margin: 0px;
+  font-family: Charter;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  margin: 0;
   color: #4e4e4e;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+table {
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  background: #f7f7f7;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+}
+
+td {
+  padding: 0px 5px;
+}
+
+b {
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 #org {
-  margin-left: 10%;
-  width: 70%;
-  background-color: #fafafa;
+  background-color: white;
   padding: 50px;
-	min-height: 800px;
+  width: 50%;
+  /* height: auto; */
 }
 
 pre {
-	background: #ececec;
-	font-size: 0.8em;
-	padding: 4px 5px;
-	overflow: auto;
-	margin: 20px 0px 20px 20px;
+  background: #ececec;
+  font-size: 0.8em;
+  padding: 4px 5px;
+  overflow: auto;
+  margin: 20px 0px 20px 20px;
 }
 
 #loader {
-	height: 5px;
-	background-color: white;
-	width: 60%;
-	margin: 50px 20%;
-	overflow: hidden;
+  height: 5px;
+  background-color: white;
+  width: 60%;
+  margin: 50px 20%;
+  overflow: hidden;
 }
 
 #bar {
-	height: 100%;
-	background-color: #bcbcbc;
-	animation-name: loading;
+  height: 100%;
+  background-color: #bcbcbc;
+  animation-name: loading;
   animation-duration: 1s;
-	animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @keyframes loading{
   0% {margin-left: -20%; width: 20%}
-	100% {margin-left: 100%; width: 20%}
+  100% {margin-left: 100%; width: 20%}
 }
 
 
 .section-number {
   font-size: 0.5em;
   padding: 5px;
+  color: #b6b7bd;
 }
 
 h3, h3.inactive {
   font-size: 150%;
   font-style: italic;
   font-weight: normal;
-  background-color: #fafafa;
+  background-color: white;
   padding: 10px 5px;
   border-bottom: 1px dotted #efefef;
   width: 90%;
-	cursor: pointer;
+  cursor: pointer;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.11);
+  border-radius: 10px;
 }
 
 h3.active {
-	background-color: #fdfdfd;
+  background-color: #fff;
+  box-shadow: 0 1px 6px 0 rgba(87, 67, 155, 0.64)
+  border-radius: 10px;
+  color: black;
 }
 
 h3:hover{
-	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.11);
+  box-shadow: 0 1px 6px 0 rgba(111, 35, 223, 0.23);
 }
 
 h3:first-child{
-	margin-top: 0;
-	padding: 10px 5px;
-	border-bottom: 1px dotted #efefef;
-	width: 90%;
+  margin-top: 0;
+  padding: 10px 5px;
+  width: 90%;
 }
 
 h4, h5, h6, h7, h8 {
@@ -87,8 +115,8 @@ h4, h5, h6, h7, h8 {
 }
 
 h7, h8{
-	background-color: #fefefe;
-	border-bottom: none;
+  background-color: #fefefe;
+  border-bottom: none;
 }
 
 .line{
@@ -104,59 +132,59 @@ p {
 }
 
 a {
-  text-decoration: underline;
-	color: #0075ab;
+  text-decoration: none;
+  color: #511de3;
 }
 
 li {
-	padding: 0px 0px;
-	line-height: 1.5rem;
-	font-size: 0.9em;
+  padding: 0px 0px;
+  line-height: 1.5rem;
+  font-size: 0.9em;
 }
 
 #message {
-	background-color: #f0f0f0;
-	padding: 50px;
-	margin-left: 10%;
-	width: 70%;
-	margin-top: 50px;
-	margin-bottom: 50px;
+  background-color: #f0f0f0;
+  padding: 50px;
+  margin-left: 10%;
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .explain {
-	padding: 20px 0px;
-	text-align: center;
-	font-size: 15px;
-	color: #aeaeae;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 15px;
+  color: #aeaeae;
 }
 
 .explain a{
-	color: #757575;
+  color: #757575;
 }
 
 .message a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .detail{
-	font-size: 80%;
-	padding: 15px 0px;
-	border-top: 1px dotted #ececec;
-	margin: 0;
+  font-size: 80%;
+  padding: 15px 0px;
+  border-top: 1px dotted #ececec;
+  margin: 0;
 }
 
 blockquote .line {
   padding-top: 0px;
-	font-style: oblique;
-	font-size: 0.7rem;
+  font-style: oblique;
+  font-size: 0.7rem;
 }
 
 blockquote {
-	background: #ececec;
-	font-size: 0.7em;
-	padding: 10px 0px;
-	overflow: auto;
-	margin: 0 0 20px 20px;
+  background: #f7f7f7;
+  font-size: 0.7em;
+  padding: 10px 20px 10px 0px;
+  overflow: auto;
+  margin: 20px;
 }
 
 .prettyprint {
@@ -166,104 +194,110 @@ blockquote {
 }
 
 code {
-	padding: 10px 5px;
-	margin-left: 20px;
+  padding: 10px 5px;
+  margin-left: 20px;
 }
 
 .prettyprint code {
-	padding: 15px 20px 0px;
-	margin-left: 0px;
+  padding: 15px 20px 0px;
+  margin-left: 0px;
 }
 
 code, .results {
   /* white-space: pre-line; */
-	line-height: 1.2rem;
-	font-size: 0.6rem;
+  line-height: 1.2rem;
+  font-size: 0.6rem;
 }
 
 .results {
-	margin: 0;
-	background: #fbf7f3;
+  margin: 0;
+  background: #fbf7f3;
 }
 
 p.results {
-	padding: 0px 12px;
+  padding: 0px 12px;
 }
 
 img {
-	max-width: 90%;
-	height: auto;
+  max-width: 90%;
+  height: auto;
 }
 
 .toggleblock {
-	cursor: pointer;
-	background: linear-gradient(to right, #f9f9f9, #f2f1f5);
-	padding: 10px 20px;
-	color: #bcbdc6;
-	font-size: 12px;
-	margin: 0px;
-	font-family: charset normal;
-	border-bottom: 1px solid #f2f1f5;
-	text-align: center;
-	box-shadow: 0 1px 6px 0 rgba(45, 46, 48, 0.03);
+  cursor: pointer;
+  background: linear-gradient(to right, #f9f9f9, #f2f1f5);
+  padding: 10px 20px;
+  color: #7a6fff;
+  font-size: 12px;
+  margin: 0px;
+  font-family: charter;
+  border-bottom: 1px solid #f2f1f5;
+  text-align: center;
+  box-shadow: 0 1px 6px 0 rgba(45, 46, 48, 0.03);
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 780px) {
   #org {
-		font-size: 16px;
-		margin-left: 0px;
-		width: auto;
-		padding: 0px;
-	}
-	h3, h3:first-child, h3.inactive {
-		padding: 15px 5%;
-		border-bottom: 1px solid #ececec;
-		width: 90%;
-		margin: 0 0 0px 0;
-	}
-	h3 {
-		margin-top: 0px;
-	}
-	h3.active{
-		box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.11);
-	}
-	h4, h5, h6, h7, h8 {
-		padding: 10px 5%;
-		width: 90%;
-		margin: 0px;
-	}
-	.line {
-		padding: 10px 5px;
-		margin-left: 20px;
-	}
-	.prettyprint {
-		margin: 20px;
-	}
-	pre {
-		margin: 20px;
-	}
+    font-size: 14px;
+    /*! margin-left: 0px; */
+    /*! width: auto; */
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  h3.active{
+    border-radius: 0px !important;;
+  }
+ 
+  h3, h3:first-child, h3.inactive {
+    padding: 15px 5%;
+    border-bottom: 1px solid #ececec;
+    width: 90%;
+    margin: 0 0 0px 0;
+    border-radius: 0px;
+  }
+  h3 {
+    margin-top: 0px;
+  }
+  h3.active{
+    box-shadow: 0 1px 6px 0 rgba(96, 52, 219, 0.42);
+  }
+  h4, h5, h6, h7, h8 {
+    padding: 10px 5%;
+    width: 90%;
+    margin: 0px;
+  }
+  .line {
+    padding: 10px 15px 10px 5px;
+    margin-left: 20px;
+  }
+  .prettyprint {
+    margin: 20px;
+  }
+  pre {
+    margin: 20px;
+  }
   blockquote{
     margin: 15px 0px;
   }
-	#message {
-		background-color: #f0f0f0;
-		padding: 20px 0px 15px;
-		margin: 50px 0;
-		width: 100%;
-	}
-	#loader {
-		height: 5px;
-		background-color: white;
-		width: 60%;
-		margin: 35px 20%;
-		overflow: hidden;
-	}
-	.explain {
-		margin: 0px 10% 30px;
-		text-align: center;
-		font-size: 13px;
-		color: #aeaeae;
-		width: 80%;
-		padding: 0;
-	}
+  #message {
+    background-color: #f0f0f0;
+    padding: 20px 0px 15px;
+    margin: 50px 0;
+    width: 100%;
+  }
+  #loader {
+    height: 5px;
+    background-color: white;
+    width: 60%;
+    margin: 35px 20%;
+    overflow: hidden;
+  }
+  .explain {
+    margin: 0px 10% 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #aeaeae;
+    width: 80%;
+    padding: 0;
+  }
 }
