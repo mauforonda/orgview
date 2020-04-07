@@ -47,7 +47,7 @@ pre {
 
 #loader {
   height: 5px;
-  background-color: white;
+  background-color: #e7e7ff;
   width: 60%;
   margin: 50px 20%;
   overflow: hidden;
@@ -55,7 +55,7 @@ pre {
 
 #bar {
   height: 100%;
-  background-color: #bcbcbc;
+  background-color: #3029ff;
   animation-name: loading;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -143,7 +143,7 @@ li {
 }
 
 #message {
-  background-color: #f0f0f0;
+  background-color: white;
   padding: 50px;
   margin-left: 10%;
   width: 70%;
@@ -155,11 +155,10 @@ li {
   padding: 20px 0px;
   text-align: center;
   font-size: 15px;
-  color: #aeaeae;
+  color: #8178a2;
 }
 
 .explain a{
-  color: #757575;
 }
 
 .message a {
