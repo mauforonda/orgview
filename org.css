@@ -279,14 +279,12 @@ img {
     margin: 15px 0px;
   }
   #message {
-    background-color: #f0f0f0;
     padding: 20px 0px 15px;
     margin: 50px 0;
     width: 100%;
   }
   #loader {
     height: 5px;
-    background-color: white;
     width: 60%;
     margin: 35px 20%;
     overflow: hidden;
@@ -295,7 +293,6 @@ img {
     margin: 0px 10% 30px;
     text-align: center;
     font-size: 13px;
-    color: #aeaeae;
     width: 80%;
     padding: 0;
   }
