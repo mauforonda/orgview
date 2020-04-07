@@ -145,12 +145,12 @@ li {
 #message {
   background-color: white;
   padding: 50px;
-  margin-left: 10%;
   width: 70%;
   margin-top: 50px;
   margin-bottom: 50px;
+  border-radius: 50px;
+  box-shadow: 0 1px 6px 0 rgba(170, 167, 179, 0.32);
 }
-
 .explain {
   padding: 20px 0px;
   text-align: center;
@@ -279,6 +279,7 @@ img {
     margin: 15px 0px;
   }
   #message {
+    border-radius: 0;
     padding: 20px 0px 15px;
     margin: 50px 0;
     width: 100%;
