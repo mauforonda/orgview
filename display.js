@@ -155,9 +155,9 @@ const fallback = () => {
 		
 		explain = element('div', {className: 'explain'});
 		explain.appendChild(
-			element('span', {textContent: "You can display an org-mode file by appending its url to this address like "}));
+			element('span', {textContent: "You can display org-mode documents in your browser. See an "}));
 		explain.appendChild(
-			element('a', {textContent: "this", href: ".?https://raw.githubusercontent.com/mauforonda/emacs/master/readme.org"}));
+			element('a', {textContent: "example", href: ".?https://raw.githubusercontent.com/mauforonda/emacs/master/readme.org"}));
 		
 		document.getElementById('org').style.display = "none";
 		message.appendChild(loader);
