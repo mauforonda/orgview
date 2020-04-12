@@ -1,6 +1,6 @@
 body {
   font-family: Charter;
-  background-color: #fff8f6;
+  background: linear-gradient(to right, #f9e5ec, #f9ebff);
   font-size: 15px;
   margin: 0;
   color: #4e4e4e;
@@ -13,17 +13,23 @@ body {
 table {
   padding: 5px 10px;
   font-size: 0.7rem;
-  background: #f7f7f7;
+  background: #fff;
   overflow: auto;
+  border-collapse: collapse;
 }
 
 th {
   text-align: left;
-  padding: 5px;
+  padding: 7px;
+  font-size: 1.1em;
+}
+
+tr {
+  border-bottom: 1px solid #dbd4e3;
 }
 
 td {
-  padding: 0px 5px;
+  padding: 5px 5px;
 }
 
 b {
@@ -39,7 +45,7 @@ b {
 }
 
 pre {
-  background: #ececec;
+  background: #b99fbd;
   font-size: 0.8em;
   padding: 4px 5px;
   overflow: auto;
@@ -134,7 +140,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #511de3;
+  color:#565fe1;
 }
 
 li {
@@ -188,7 +194,7 @@ blockquote {
 }
 
 .prettyprint {
-  background-color: #f8f8f8;
+  background: linear-gradient(to right, #fdf3fd, #e7e3f4);
   padding: 0px;
   margin-left: 20px;
 }
@@ -224,15 +230,14 @@ img {
 
 .toggleblock {
   cursor: pointer;
-  background: linear-gradient(to right, #f9f9f9, #f2f1f5);
+  background: linear-gradient(to right, #f0c3d2, #6b48d2);
   padding: 10px 20px;
-  color: #7a6fff;
+  color: #fff;
   font-size: 12px;
   margin: 0px;
   font-family: charter;
-  border-bottom: 1px solid #f2f1f5;
   text-align: center;
-  box-shadow: 0 1px 6px 0 rgba(45, 46, 48, 0.03);
+  box-shadow: 0 1px 6px 0 rgba(107, 54, 159, 0.74);
 }
 
 @media screen and (max-width: 780px) {
