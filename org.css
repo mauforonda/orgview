@@ -45,11 +45,12 @@ b {
 }
 
 pre {
-  background: #b99fbd;
+  background: #eee4f0;
   font-size: 0.8em;
   padding: 4px 5px;
   overflow: auto;
   margin: 20px 0px 20px 20px;
+  color: #6b6191;
 }
 
 #loader {
