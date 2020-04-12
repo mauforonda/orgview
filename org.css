@@ -45,8 +45,8 @@ b {
 }
 
 pre {
-  background: #eee4f0;
-  font-size: 0.8em;
+  background: linear-gradient(to right, #fdf3fd, #e7e3f4);
+  font-size: 0.6em;
   padding: 4px 5px;
   overflow: auto;
   margin: 20px 0px 20px 20px;
