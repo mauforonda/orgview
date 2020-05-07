@@ -1,6 +1,6 @@
 body {
   font-family: Charter;
-  background: linear-gradient(to right, #f9e5ec, #f9ebff);
+  background: linear-gradient(to right, #f7f7f7, #f6f4f7);
   font-size: 15px;
   margin: 0;
   color: #4e4e4e;
@@ -40,12 +40,13 @@ b {
 #org {
   background-color: white;
   padding: 50px;
-  width: 50%;
+  max-width: 50%;
   /* height: auto; */
+  min-width: 50%;
 }
 
 pre {
-  background: linear-gradient(to right, #fdf3fd, #e7e3f4);
+  background: #f9f9f9;
   font-size: 0.6em;
   padding: 4px 5px;
   overflow: auto;
@@ -88,7 +89,7 @@ h3, h3.inactive {
   background-color: white;
   padding: 10px 5px;
   border-bottom: 1px dotted #efefef;
-  width: 90%;
+  width: 100%;
   cursor: pointer;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.11);
   border-radius: 10px;
@@ -108,7 +109,7 @@ h3:hover{
 h3:first-child{
   margin-top: 0;
   padding: 10px 5px;
-  width: 90%;
+  width: 100%;
 }
 
 h4, h5, h6, h7, h8 {
@@ -195,9 +196,10 @@ blockquote {
 }
 
 .prettyprint {
-  background: linear-gradient(to right, #fdf3fd, #e7e3f4);
+  background: linear-gradient(to right, #f9f9f9, #f1f1f2);
   padding: 0px;
   margin-left: 20px;
+  border-radius: 5px;
 }
 
 code {
@@ -231,14 +233,14 @@ img {
 
 .toggleblock {
   cursor: pointer;
-  background: linear-gradient(to right, #f0c3d2, #6b48d2);
+  background: linear-gradient(to right, #dbd6d8, #cecbd5);
   padding: 10px 20px;
-  color: #fff;
+  color: #787784;
   font-size: 12px;
   margin: 0px;
   font-family: charter;
   text-align: center;
-  box-shadow: 0 1px 6px 0 rgba(107, 54, 159, 0.74);
+  box-shadow: 0 1px 6px 0 rgba(52, 33, 70, 0.74);
 }
 
 @media screen and (max-width: 780px) {
