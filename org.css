@@ -42,6 +42,7 @@ b {
   padding: 50px;
   /* height: auto; */
   min-width: 50%;
+  max-width: 50%;
 }
 
 pre {
@@ -248,6 +249,7 @@ img {
     /*! margin-left: 0px; */
     /*! width: auto; */
     padding: 0 !important;
+    max-width: 100% !important;
     width: 100% !important;
   }
   h3.active{
